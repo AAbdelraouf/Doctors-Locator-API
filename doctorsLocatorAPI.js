@@ -1,4 +1,6 @@
 
+
+
         var map;
         var infoWindow;        
         var request;
@@ -16,7 +18,7 @@
             request = {
                 location: center,
                 radius: 8047,
-                types: ['doctors']
+                types: ['cafe']
             };
 
             infoWindow = new google.maps.infoWindow();
@@ -29,7 +31,7 @@
                 request = {
                     location: center,
                     radius: 8047,
-                    types: ['doctors']
+                    types: ['cafe']
                 };
                 service.nearbySearch(request, callback);
 
