@@ -1,6 +1,4 @@
 
-
-
         var map;
         var infoWindow;        
         var request;
@@ -8,8 +6,8 @@
         var markers = [];
 
         function initialize(){
-            var center = new google.maps.LatLng(37.422, -122.084058);
-
+            var center = new google.maps.LatLng(47.6062095, -122.3320708);
+          
             map = new google.maps.Map(document.getElementById('map'), {
                 center: center,
                 zoom: 13
@@ -18,7 +16,7 @@
             request = {
                 location: center,
                 radius: 8047,
-                types: ['cafe']
+                types: ['store']
             };
 
             infoWindow = new google.maps.infoWindow();
@@ -31,10 +29,9 @@
                 request = {
                     location: center,
                     radius: 8047,
-                    types: ['cafe']
+                    types: ['store']
                 };
                 service.nearbySearch(request, callback);
-
             })
         }
 
